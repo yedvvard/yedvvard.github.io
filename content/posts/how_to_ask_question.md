@@ -1,7 +1,7 @@
 ---
 title: "How to ask question"
 date: 2023-04-06T23:21:29+08:00
-draft: true
+draft: false
 categories: ["测试"]
 toc: true
 tags: ["test"]
