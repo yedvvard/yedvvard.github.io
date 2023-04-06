@@ -1,9 +1,13 @@
+# baseURL = 'http://yedvvard.github.io/'
+# languageCode = 'zh_CN'
+# title = "yedvvard's blog"
+# theme = 'hugo-clarity'
 ##########################################
 # 站点配置
 
-baseURL = "https://yedvvard.github.io/"
+baseURL = "https://example.com/"
 title = "yedvvard's blog"
-languageCode = "zh-CN"
+languageCode = "zh_CN"
 hasCJKLanguage = true
 # 版权信息（支持 Markdown）
 copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)"
@@ -96,15 +100,15 @@ uglyURLs = false
 # 作者信息
 [author]
     # 名字
-    name = "edward"
+    name = "Edward"
     # 邮箱
-    email = "null#gmail.com"
+    email = "@gmail.com"
     # 座右铭或简介
     motto = "Viva La Vida"
     # 头像
     avatar = "/icons/apple-touch-icon.png"
     # 网站（默认值：baseURL）
-    website = "https://yedvvard.github.io/"
+    website = "https://io-oi.me/"
     # 推特
     twitter = "reuixiy"
 
@@ -189,12 +193,12 @@ uglyURLs = false
 
 [menu]
     ## 菜单栏
-    # [[menu.main]]
-    #     pageref = "/"
-    #     name = "首页"
-    #     weight = 1
-    #     pre = "internal"
-    #     post = "home"
+    [[menu.main]]
+         pageref = "/"
+         name = "首页"
+         weight = 1
+         pre = "internal"
+         post = "home"
     [[menu.main]]
         pageref = "/posts/"
         name = "文章"
@@ -329,6 +333,11 @@ uglyURLs = false
     homeKeywords = ""
     homeLinksDelimiter = ""
 
+    ## 「文章摘要」
+    enableHideInHomepage = false
+    # 说明：激活 `hideInHomepage` front matter
+    #      的支持（性能原因默认关闭）
+
 
     ######################################
     # 站点信息
@@ -347,7 +356,7 @@ uglyURLs = false
     # 注意：请保持此格式，更改数字
 
     # 站点的推特帐号
-    siteTwitter = "reuixiy"
+    siteTwitter = ""
     # 说明：用于 Twitter Cards
 
 
@@ -643,13 +652,38 @@ uglyURLs = false
     gitalkRepo = "your_repository"
     gitalkOwner = "your_gitalk_owner"
     gitalkAdmin = ["your_gitalk_admin"]
-    gitalkLable = ["Gitalk"]
-    gitalkDistractionFreeMode = false
+
+    # 1. default (`location.href`)
+    # 2. pathname (`location.pathname`)
+    # 3. hash (hash_filepath)
+    # 4. custom:your_gitalk_id ("your_gitalk_id")
+    gitalkID = "pathname"
+
+    gitalkNumber = -1
+    gitalkLables = ["Gitalk"]
+
+    # 1. default (`document.title`)
+    # 2. custom:your_gitalk_title ("your_gitalk_title")
+    gitalkTitle = "default"
+
+    # 1. default (`location.href` + header.meta[description])
+    # 2. href (`location.href`)
+    # 3. custom:your_gitalk_body ("your_gitalk_body")
+    gitalkBody = "default"
+
+    # 1. default (`navigator.language || navigator.userLanguage`)
+    # 2. Support [en, zh-CN, zh-TW, es-ES, fr, ru, de, pl, ko, fa, ja]
+    gitalkLanguage = "zh-CN"
+
     gitalkPerPage = 10
-    gitalkLanguage = "en"
+    gitalkDistractionFreeMode = false
     gitalkPagerDirection = "last"
     gitalkCreateIssueManually = false
     gitalkProxy = "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"
+    gitalkStaggerDelayBy = 150
+    gitalkAppearAnimation = "accordionVertical"
+    gitalkEnterAnimation = "accordionVertical"
+    gitalkLeaveAnimation = "accordionVertical"
     gitalkEnableHotKey = true
     # 说明：https://github.com/gitalk/gitalk
 
@@ -802,11 +836,6 @@ uglyURLs = false
     # 说明：文章的 Front Matter 中的 `toc`
     #      的优先级高于此处
 
-    # 显示位置 
-    # 可选 "left" | "center" | "right"
-    # 默认为 "center"
-    displayTOCPlace = "left"
-
     # 是否显示目录标题
     displayTOCTitle = true
 
@@ -814,7 +843,6 @@ uglyURLs = false
     displayTOCNum = true
     # 说明：文章的 Front Matter 中的 `tocNum`
     #      的优先级高于此处
-    #      仅在显示位置为 `center` 时可用
 
     # 是否链接文章的分节标题到目录
     linkHeadingsToTOC = true
