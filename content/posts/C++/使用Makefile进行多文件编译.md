@@ -1,8 +1,10 @@
 ---
-title: "C++学习笔记(5)"
+title: "使用Makefile进行多文件编译"
 date: 2023-04-08T19:35:41+08:00
 draft: false
 toc: true
+categories: ["C++"]
+tags: ["C++","makefile"]
 ---
 
 ## 使用两个类class1和class2，在demo中利用class1访问class2的私有属性（基于friend）
