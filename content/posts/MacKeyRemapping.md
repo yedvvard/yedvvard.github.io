@@ -1,8 +1,8 @@
 ---
 title: "在macOS上修改外接键盘的按键映射并设置开机自动修改"
-date: 2023-04-06T23:21:29+08:00
+date: 2023-04-26T23:21:29+08:00
 draft: false
-categories: ["diffusion model"]
+categories: ["tool","macOS"]
 ---
 
 手里有一把支持Mac和Windows的键盘，但是唯独右边的Command键不对劲，使用按键检修的软件查看发现不是Right_Command的映射。
