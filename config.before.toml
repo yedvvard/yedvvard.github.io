@@ -106,7 +106,7 @@ uglyURLs = false
     # 网站（默认值：baseURL）
     website = "https://yedvvard.github.io/"
     # 推特
-    # twitter = "reuixiy"
+    twitter = "reuixiy"
 
 # 相关文章
 [related]
@@ -248,7 +248,7 @@ uglyURLs = false
     # 说明：仅对弹性布局的顶栏有效
 
     # 是否在首页显示
-    displayHeaderInHome = false
+    displayHeaderInHome = true
     # 说明：对弹性布局的顶栏无效
 
     # 背景
@@ -310,11 +310,11 @@ uglyURLs = false
     # 3. posts     文章摘要
     # 4. page      普通页面
 
-    homeLayout = "page"
+    homeLayout = "posts"
 
     ## 「诗意人生」
     # 诗句，支持 Markdown
-    # homePoetry = []
+    homePoetry = []
     # 底部链接的内间距，单位：em
     homeLinksPadding = 1
 
@@ -348,7 +348,7 @@ uglyURLs = false
     # 注意：请保持此格式，更改数字
 
     # 站点的推特帐号
-    # siteTwitter = "reuixiy"
+    siteTwitter = "reuixiy"
     # 说明：用于 Twitter Cards
 
 
@@ -536,7 +536,7 @@ uglyURLs = false
 
     jsonLD = true
     openGraph = true
-    # twitterCards = true
+    twitterCards = true
     # 注意：如果你设置 twitterCards 为 `true`，
     #      请务必开启 openGraph。否则，网页的
     #      Twitter Cards 信息将会不完整。
@@ -739,7 +739,7 @@ uglyURLs = false
     #      的优先级高于此处
 
     # 是否在首页开启
-    enablePostMetaInHome = false
+    enablePostMetaInHome = true
     # 说明：仅对「文章摘要」和「普通页面」
     #      首页布局有效
 
@@ -1229,7 +1229,7 @@ uglyURLs = false
     displayFooter = true
 
     # 是否在首页显示
-    displayFooterInHome = false
+    displayFooterInHome = true
 
     displayCopyleftSymbol = false
     # 是否显示版权符号（©）
